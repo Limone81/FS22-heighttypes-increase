@@ -5,7 +5,7 @@ English version down below!
 
 Gestartet wird mit einer entpackten (**kein zip**) Karte. Es darf sich auch keine gepackte Version im selben Verzeichnis befinden, da der Editor sonst diese lädt!
 
-1) **"maps/data/densityMap_ground.gdm"** mit GRLE-Konverter (Download unter https://gdn.giants-software.com/downloads.php) in PNG konvertieren, Original aus dem Map-Ordner löschen. (**Achtung:** Pfad kann abweichen)
+1) **"maps/data/densityMap_height.gdm"** mit GRLE-Konverter (Download unter https://gdn.giants-software.com/downloads.php) in PNG konvertieren, Original aus dem Map-Ordner löschen. (**Achtung:** Pfad kann abweichen)
 
 2) i3D mit Texteditor bearbeiten, nach **densityMap_height** suchen und die am Anfang der Zeile notierte **fileId** merken
 
@@ -57,7 +57,7 @@ diesen ändern zu
 
 You start with an unzipped (**no zip**) card. There must not be a packed version in the same directory, otherwise the editor will load it!
 
-1) Convert **"maps/data/densityMap_ground.gdm"** to PNG using the GRLE converter (download at https://gdn.giants-software.com/downloads.php), delete the original from the map folder. (**Attention:** Path may vary)
+1) Convert **"maps/data/densityMap_height.gdm"** to PNG using the GRLE converter (download at https://gdn.giants-software.com/downloads.php), delete the original from the map folder. (**Attention:** Path may vary)
 
 2) Edit i3D with a text editor, search for **densityMap_height** and note the **fileId** noted at the beginning of the line
 
