@@ -51,6 +51,21 @@ diesen ändern zu
 
 9) Map im Giants Editor laden, Log auf Fehler prüfen. Wenn erfolgreich (keine Fehler) wieder abspeichern. Dann hat man eine neue **densityMap_height.gdm** und die PNG im "maps/data" kann gelöscht werden.
 
+## 2024-04-13
+
+Aktuell kommt es bei Benutzung des Mods FS22_enhancedMixerWagons zu einem Fehler und es erfolgt eine Log-Ausgabe, als habe man das Maximum an heighttypes erreicht (Error: addDensityMapHeightType: maximum number of height types already registered.). Dies wird daurch verursacht, dass in diesem Mod selbst nochmal eine **densityMapHeightTypes.xml** enthalten ist die aktuell leider die Einstellungen auf die Standarwerte zurücksetzt. Bis der Mod gefixt wurde kann man sich selbst mit einem kleinen Fix der Datei behelfen.
+Pfad zur Datei: FS22_enhancedMixerWagons\data\fillTypes\densityMapHeightTypes.xml
+
+```xml
+<densityMapHeightTypes firstChannel="0" numChannels="6">
+```
+
+ändern zu 
+```xml
+<densityMapHeightTypes>
+```
+
+
 
 # FS22-heighttypes-increase
 ## Instructions for increasing heighttypes from 64 to 128
@@ -102,3 +117,17 @@ edit to
    Afterwards, the path to **densityMapHeightTypes.xml** must of course be adjusted to the new storage location; usually **<densityMapHeightTypes filename="maps/densityMapHeightTypes.xml" />** (path may vary)
 
 9) Load map in Giants Editor, check log for errors. If successful (no errors) save again. Then you have a new **densityMap_height.gdm** and the PNG in “maps/data” can be deleted.
+
+## 2024-04-13
+
+Currently, when using the mod FS22_enhancedMixerWagons, an error occurs and a log output is displayed as if the maximum number of heighttypes had been reached (Error: addDensityMapHeightType: maximum number of height types already registered.). This is caused by the fact that this mod itself contains another **densityMapHeightTypes.xml** which unfortunately resets the settings to the default values. Until the mod has been fixed, you can help yourself with a small fix to the file.
+Path to the file: FS22_enhancedMixerWagons\data\fillTypes\densityMapHeightTypes.xml
+
+```xml
+<densityMapHeightTypes firstChannel="0" numChannels="6">
+```
+
+change to
+```xml
+<densityMapHeightTypes>
+```
