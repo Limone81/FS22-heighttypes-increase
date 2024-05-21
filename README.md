@@ -66,6 +66,10 @@ Pfad zur Datei: FS22_enhancedMixerWagons\data\fillTypes\densityMapHeightTypes.xm
 ```
 
 
+## 2024-05-21
+
+Der Mod FS22_enhancedMixerWagons (1.0.1.0) wurde gefixt und der Fehler oben (2024-04-13) sollte nun nicht mehr auftreten.
+
 
 # FS22-heighttypes-increase
 ## Instructions for increasing heighttypes from 64 to 128
@@ -131,3 +135,8 @@ change to
 ```xml
 <densityMapHeightTypes>
 ```
+
+
+## 2024-05-21
+
+The mod FS22_enhancedMixerWagons (1.0.1.0) has been fixed and the error above (2024-04-13) should no longer occur.
