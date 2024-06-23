@@ -51,24 +51,9 @@ diesen ändern zu
 
 9) Map im Giants Editor laden, Log auf Fehler prüfen. Wenn erfolgreich (keine Fehler) wieder abspeichern. Dann hat man eine neue **densityMap_height.gdm** und die PNG im "maps/data" kann gelöscht werden.
 
-## 2024-04-13
+## 2024-06-23
 
-Aktuell kommt es bei Benutzung des Mods FS22_enhancedMixerWagons zu einem Fehler und es erfolgt eine Log-Ausgabe, als habe man das Maximum an heighttypes erreicht (Error: addDensityMapHeightType: maximum number of height types already registered.). Dies wird daurch verursacht, dass in diesem Mod selbst nochmal eine **densityMapHeightTypes.xml** enthalten ist die aktuell leider die Einstellungen auf die Standarwerte zurücksetzt. Bis der Mod gefixt wurde kann man sich selbst mit einem kleinen Fix der Datei behelfen.
-Pfad zur Datei: FS22_enhancedMixerWagons\data\fillTypes\densityMapHeightTypes.xml
-
-```xml
-<densityMapHeightTypes firstChannel="0" numChannels="6">
-```
-
-ändern zu 
-```xml
-<densityMapHeightTypes>
-```
-
-
-## 2024-05-21
-
-Der Mod FS22_enhancedMixerWagons (1.0.1.0) wurde gefixt und der Fehler oben (2024-04-13) sollte nun nicht mehr auftreten.
+:warning: Der Mod "Small corn dryer" beinhaltet eine eigene densityMapHeightTypes.xml, welche die oben durchgeführten Änderungen wieder zurücksetzt!
 
 
 # FS22-heighttypes-increase
@@ -91,7 +76,7 @@ example:
 
 **numDensityMapChannels="12"** and **compressionChannels="6"** means the map currently has 64 heighttypes
 
-5) innerhalb dieser Zeile werden nun folgende Einträge angepasst
+5) the following entries are now adjusted within this line
 
 | before | after |
 |--------|---------| 
@@ -122,21 +107,6 @@ edit to
 
 9) Load map in Giants Editor, check log for errors. If successful (no errors) save again. Then you have a new **densityMap_height.gdm** and the PNG in “maps/data” can be deleted.
 
-## 2024-04-13
+## 2024-06-23
 
-Currently, when using the mod FS22_enhancedMixerWagons, an error occurs and a log output is displayed as if the maximum number of heighttypes had been reached (Error: addDensityMapHeightType: maximum number of height types already registered.). This is caused by the fact that this mod itself contains another **densityMapHeightTypes.xml** which unfortunately resets the settings to the default values. Until the mod has been fixed, you can help yourself with a small fix to the file.
-Path to the file: FS22_enhancedMixerWagons\data\fillTypes\densityMapHeightTypes.xml
-
-```xml
-<densityMapHeightTypes firstChannel="0" numChannels="6">
-```
-
-change to
-```xml
-<densityMapHeightTypes>
-```
-
-
-## 2024-05-21
-
-The mod FS22_enhancedMixerWagons (1.0.1.0) has been fixed and the error above (2024-04-13) should no longer occur.
+:warning: The mod "Small corn dryer" contains its own densityMapHeightTypes.xml, which resets the changes made above!
